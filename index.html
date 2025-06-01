@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light/Dark Theme Toggle</title>
+    <link rel="icon" type=".jpg" href="Toggle.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Theme Toggle Demo</h1>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn" class="toggle-btn" aria-label="Toggle theme">
+                    <span class="toggle-icon">🌙</span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section class="content">
+                <h2>Welcome to the Theme Toggle Page</h2>
+                <p>This page demonstrates a smooth transition between light and dark themes. The toggle button in the header allows you to switch between themes, and your preference will be saved for future visits.</p>
+                
+                <div class="card">
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Smooth theme transitions</li>
+                        <li>Local storage persistence</li>
+                        <li>System preference detection</li>
+                        <li>Accessible toggle button</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Sample Code Block</h3>
+                    <pre><code>function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', newTheme);
+}</code></pre>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Theme Toggle Demo. Built with HTML, CSS, and JavaScript.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
